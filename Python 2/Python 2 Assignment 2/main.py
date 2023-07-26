@@ -11,16 +11,21 @@ power_coeffecient = 0.4  # unitless
 
 
 print("Wind Power Generation:")
-print("-------------------------------------\n")
+print("-------------------------------------")
 print("Using default Values")
 power = wind_turbine.calculate_power(length)
 print(power)
+
+print()
 
 print("Without using default values")
 power = wind_turbine.calculate_power(
     length, air_density, velocity, power_coeffecient)
 print(power)
+print("-------------------------------------")
 
+print()
 print("Heater Energy Calculation")
-print("-------------------------------------\n")
+print("-------------------------------------")
 print(heater.calculate_energy(power, time))
+print("-------------------------------------")
