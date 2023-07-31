@@ -18,6 +18,7 @@ def my_factorial_for(n):
 
     n_factorial = 1
     for iterator in range(1, n + 1):
+        # [1,2,3,...,n]
         n_factorial *= iterator
 
     return n_factorial
@@ -40,8 +41,9 @@ def my_factorial_while(n):
 
     n_factorial = 1  # The answer we are returning
     iterator = 0
-    while iterator < n:
+    while iterator < n:  # [0,1,2,..., n-1]
         iterator += 1
+        # [1,2,3,...,n]
         n_factorial *= iterator
 
     return n_factorial
