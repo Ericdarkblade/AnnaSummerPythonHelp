@@ -52,7 +52,7 @@ convolution = np.convolve(signal_array, filter_array)
 
 # Print that is required from the assignment handout. The first 10 values were requested.
 for i in range(10):
-    print(convolution[i])
+    print(f"{i}: {convolution[i]}")
 
 # This is the extra credit part that I thought was interesting.
 
