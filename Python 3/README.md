@@ -73,13 +73,13 @@ FORLOOP  : Factorial of 50 is 30414093201713378043612608166064768844377641568960
 
 Create a new signal array with the formula:
 
-![Signal Formula](Task%202%20Document%20Files/Python3_Task 2 Signal Formula.jpg)
+![Signal Formula](Task%202%20Document%20Files/Python3_Task-2-Signal-Formula.jpg)
 
 where i ranges from [0,100)
 
 then Use numpy to perform convolution which is the formula:
 
-![Convolution](Task%202%20Document%20Files/Python3_Task 2 Convolution Formula.jpg)
+![Convolution](Task%202%20Document%20Files/Python3_Task-2-Convolution-Formula.jpg)
 
 using the filter array:
 
