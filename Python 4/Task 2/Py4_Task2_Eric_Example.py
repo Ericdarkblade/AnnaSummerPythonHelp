@@ -16,6 +16,17 @@ def Absorb_Calc(path_length, molar_extinction_coefficient, absorbency):
     return concentration
 
 def parse_data(path_of_data):
+    """
+    Opens a text file:
+    Reads the first line of text as the Substance Name (String)
+    Reads the second line of text as the Path Length (Float)
+    Reads the third line of text as the Molar Extinction Coefficient (Float)
+
+    And iterates through the remaining text document parsing through each absorbency (float)
+    and prints a formatted string of the absorbency and calculated concentration.
+    @param path_of_data (string): path to the text file to be opened.
+    @return None: Prints the calculated concentrations per absorbency in text file.
+    """
     with open(path_of_data, "r") as data_file:
         substance_name = data_file.readline().strip()
         print(f"The name of the substance is {substance_name}.")
