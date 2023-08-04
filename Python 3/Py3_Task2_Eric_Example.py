@@ -33,10 +33,14 @@ def generate_signal(length=1000):
     # signal_array.append(/*Your code here*/) but I have a feeling that would be significantly
     # slower. I'm just not sure how python works.
 
-    signal_array = [None] * length  # Initiates an array to have input length.
-    for i in range(length):
-        signal_array[i] = (math.sin(i / 500 * math.pi)) ** 2
+    # signal_array = [None] * length  # Initiates an array to have input length.
+    # for i in range(length):
+    #     signal_array[i] = (math.sin(i / 500 * math.pi)) ** 2
 
+
+    signal_array = []
+    for i in range(length):
+        signal_array.append((math.sin(i / 500 * math.pi)) ** 2)
     return signal_array
 
 
